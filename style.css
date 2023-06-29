@@ -90,8 +90,12 @@ margin: 4px auto;
   animation: slide-in 0.2s forwards;
   right:0;
   left: initial;
-
 }
+
+#swich button:hover{
+  outline: 8px solid var(--highlight-color);
+}
+
 #switch span{
   display: block;
   width: 64px;
@@ -179,5 +183,23 @@ footer{
 
   .light{
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/*animation*/
+@keyframes slide-in{
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes slide-back{
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
   }
 }
